@@ -13,6 +13,8 @@ async def on_ready():
 async def on_message(message):
     if message.author.bot:
         return
+    if message.content == "!komutlar":
+        await message.channel.send("not yet bro :(")
     if message.content == "sa":
         await message.channel.send("ase bro")
     if message.content == "!deneme":
