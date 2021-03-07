@@ -18,7 +18,7 @@ async def on_ready():
         while True:
             timenow = str(datetime.datetime.now())
             if timenow[0:19] == "2021-03-08 00:00:01":
-                await channel.send("8 MART DÜNYA KADINLAR GÜNÜMÜZ KUTLU OLSUN @everyone")
+                await channel.send("8 MART DÜNYA KADINLAR GÜNÜ KUTLU OLSUN @everyone")
                 break
             else:
                 print(datetime.datetime.now())
@@ -35,6 +35,6 @@ async def on_message(message):
     if message.content == "!deneme":
         await message.channel.send("aynen deneme @here")
     if message.content == "!8-mart":
-        await message.channel.send("8 MART DÜNYA KADINLAR GÜNÜMÜZ KUTLU OLSUN @everyone")
+        await message.channel.send("8 MART DÜNYA KADINLAR GÜNÜ KUTLU OLSUN @everyone")
 
 bot.run(token)
