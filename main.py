@@ -15,5 +15,9 @@ async def on_message(message):
         return
     if message.content == "sa":
         await message.channel.send("ase bro")
+    if message.content == "!deneme":
+        await message.channel.send("aynen deneme @here")
+    if message.content == "!8-mart":
+        await message.channel.send("8 MART DÜNYA KADINLAR GÜNÜMÜZ KUTLU OLSUN @everyone")
 
 bot.run(token)
